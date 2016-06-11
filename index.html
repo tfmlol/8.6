@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Lesson 8 EX 8.6</title>
+		<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/8_6_StyleSheet.css">
+		<script src="js/script.js"></script>
+	</head>
+
+	<body>
+
+		<div>
+			<h1 id="answer">Answer</h1>
+			<input type="text" id="userInput"/>
+			<input type="submit" value="Check Value" id="btnCheck"/>
+		</div>
+
+		<div>
+			<input type="text" id="txtB"/>
+			<input type="submit" value="Create Buttons" id="btnLoop"/>
+		</div>
+
+		<div>
+			<h3 id="hue">Big Answer</h3>
+			<input type="text" id="bigInput">
+			<button type="button" onclick="showImage()"> Enter Big Numbers Here!
+			</button> 
+			<img src="images/9K.jpg" id="lol"/>
+		</div>
+
+		<div id="buttons">
+			<!--This div will contain the buttons-->
+		</div>
+
+
+
+
+
+
+<!-- Incomeplete Running App -->
+		<!-- <section>
+
+			<table border="1px">
+				<tr>
+					<th>Speed</th>
+					<th>Warm up</th>
+					<th>Phase 1</th>
+					<th>Phase 2</th>
+					<th>Phase 3</th>
+					<th>Phase 4</th>
+					<th>Phase 5</th>
+					<th>Phase 6</th>
+					<th>Phase 7</th>
+					<th>Phase 8</th>
+					<th>Phase 9</th>
+					<th>Burnout Phase</th>
+					<th>Cool Down Phase</th>
+				</tr>
+
+				<tr>
+					<td>km/h</td>
+					<td>6.5</td>
+					<td>8</td>
+					<td>7</td>
+					<td>9</td>
+					<td>8</td>
+					<td>10</td>
+					<td>9</td>
+					<td>11</td>
+					<td>10</td>
+					<td>12</td>
+					<td>16</td>
+					<td>CDR</td>
+				</tr>
+
+				<tr>
+					<td>Time Duration</td>
+					<td>5 mins</td>
+					<td>2 mins</td>
+					<td>1 min</td>
+					<td>2 min</td>
+					<td>1 min</td>
+					<td>2 min</td>
+					<td>1 min</td>
+					<td>2 min</td>
+					<td>1 min</td>
+					<td>2 min</td>
+					<td>45 sec</td>
+					<td>min 4 min</td>
+				</tr>
+
+			</table>
+		</section>
+
+		<section>
+
+			<article>
+				<p>
+					Display Average run speed <br>
+					Average run speed = Warm up + all phases + burnout km/h
+				</p>
+
+				<p>Display Total Distance travelled</p>
+
+				<form>
+					<button onclick="runSpeed()">Average Running Speed</button>
+				</form>
+			</article>
+
+		</section>
+
+		<form action="index.html" method="post">
+			<table border="1px">
+				<tr>
+					<th></th>
+					<th>Speed</th>
+					<th>Time Duration</th>
+					<th>Distance Travelled</th>
+				</tr>
+
+				<tr>
+					<th>Warm Up</th>
+					<td>
+						<input type="text" id="s1">
+					</td>
+
+					<td>
+						<input type="text" class="time">
+					</td>
+
+					<td>
+						<input type="text" class="distance">
+					</td>
+				</tr>
+
+				<tr>
+					<th>Phase 1</th>
+					<td>
+						<input type="text" id="s2">
+					</td>
+
+					<td>
+						<input type="text" class="time">
+					</td>
+
+					<td>
+						<input type="text" class="distance">
+					</td>
+				</tr>
+
+				<tr>
+					<th>Phase 2</th>
+					<td>
+						<input type="text" id="s3">
+					</td>
+
+					<td>
+						<input type="text" class="time">
+					</td>
+
+					<td>
+						<input type="text" class="distance">
+					</td>
+				</tr>
+
+				<tr>
+					<th>Phase 3</th>
+					<td>
+						<input type="text" id="s4">
+					</td>
+
+					<td>
+						<input type="text" class="time">
+					</td>
+
+					<td>
+						<input type="text" class="distance">
+					</td>
+				</tr>
+
+				<tr>
+					<th>Phase 4</th>
+					<td>
+						<input type="text" id="s5">
+					</td>
+
+					<td>
+						<input type="text" class="time">
+					</td>
+
+					<td>
+						<input type="text" class="distance">
+					</td>
+				</tr>
+
+				<tr>
+					<th>Phase 5</th>
+					<td>
+						<input type="text" id="s6">
+					</td>
+
+					<td>
+						<input type="text" class="time">
+					</td>
+
+					<td>
+						<input type="text" class="distance">
+					</td>
+				</tr>
+
+				<tr>
+					<th>Phase 6</th>
+					<td>
+						<input type="text" id="s7">
+					</td>
+
+					<td>
+						<input type="text" class="time">
+					</td>
+
+					<td>
+						<input type="text" class="distance">
+					</td>
+				</tr>
+
+				<tr>
+					<th>Phase 7</th>
+					<td>
+						<input type="text" id="s8">
+					</td>
+
+					<td>
+						<input type="text" class="time">
+					</td>
+
+					<td>
+						<input type="text" class="distance">
+					</td>
+				</tr>
+
+				<tr>
+					<th>Phase 8</th>
+					<td>
+						<input type="text" id="s9">
+					</td>
+
+					<td>
+						<input type="text" class="time">
+					</td>
+
+					<td>
+						<input type="text" class="distance">
+					</td>
+				</tr>
+
+				<tr>
+					<th>Phase 9</th>
+					<td>
+						<input type="text" id="s10">
+					</td>
+
+					<td>
+						<input type="text" class="time">
+					</td>
+
+					<td>
+						<input type="text" class="distance">
+					</td>
+				</tr>
+
+				<tr>
+					<th>Burnout</th>
+					<td>
+						<input type="text" id="s11">
+					</td>
+
+					<td>
+						<input type="text" class="time">
+					</td>
+
+					<td>
+						<input type="text" class="distance">
+					</td>
+				</tr>
+
+				<tr>
+					<th>Cooldown</th>
+					<td>
+						<input type="text" id="s12">
+					</td>
+
+					<td>
+						<input type="text" class="time">
+					</td>
+
+					<td>
+						<input type="text" class="distance">
+					</td>
+				</tr>
+
+			</table>
+		</form> -->
+
+
+   </body>
+
+
+</html>
